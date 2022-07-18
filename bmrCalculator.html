@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+      .div {
+        background-color: lightblue;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input,.div2 {
+        margin: 15px;
+      }
+      .label1 {
+        display: flex;
+      }
+    </style>
+    <title>BMR Calculator</title>
+  </head>
+  <body>
+    <div class="div">
+      <h1>BASAL METABOLIC RATE CALCULATOR</h1>
+      <form method="post" action="">
+        <input type="text" name="age" placeholder="AGE" />
+        <input type="text" name="height" placeholder="HEIGHT IN FEET" />
+        <input type="text" name="weight" placeholder="WEIGHT IN KGS" />
+        <div>
+          <label>GENDER:</label>
+          <input type="radio" name="gender" value="male" />MALE
+
+          <input type="radio" name="gender" value="female" />FEMALE
+        </div>
+        <div>
+            <label>Hobbies:</label>
+            <input  type='checkbox' name='hobbies' value='chess'/>CHESS
+            <input  type='checkbox' name='hobbies' value='singing'/>SINGING
+            <input  type='checkbox' name='hobbies' value='bookreading'/>BOOKREADING
+            <input  type='checkbox' name='hobbies' value='swimming'/>SWIMMING
+            <input  type='checkbox' name='hobbies' value='coding'/>CODDING
+        </div>
+        <div class="div2">
+            <label>Choose a Car:</label>
+            <select name="car" >
+                <option valu="">Select a car</option>
+
+                <option valu="volvo">VOLVO</option>
+                <option valu="tata">TATA</option>
+                <option valu="mercedes">Mercedes</option>
+                <option valu="audi">AUDI</option>
+
+            </select>
+        </div>
+
+        <button type="submit">calculate</button>
+      </form>
+    </div>
+  </body>
+</html>
